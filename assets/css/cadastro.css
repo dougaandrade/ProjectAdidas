@@ -1,0 +1,109 @@
+@font-face {
+    font-family:fonte2;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+.body{
+    background-color:rgb(204, 204, 204)
+}
+.cabeçalho{
+    background-color:#252525;
+    padding:15px;
+    margin:-8px;
+    margin-top: -40px;  
+    width:auto;
+    top:0px;
+    text-align: center;
+    align-items: center;
+}
+.logo_inicial{
+    margin: 0 auto;
+    margin-top:-1px;
+    align-items: center;
+}
+.img_1{
+    width: 10px;
+    height:20px;
+}
+.img_2{
+    width:80px;
+    height:19px;
+}
+.img_3{
+    width:65px;
+    height:70px;
+}
+.seta{
+    margin-top:15px;
+    width: 10px;
+}
+
+.seta:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .3s ease;
+}
+
+form {
+    margin:0px auto;
+    width: 290px;
+    padding: 60px;
+    border-radius:60px;
+    background-color: #252525;
+    margin-top:80px;
+    box-shadow:0 10px 9px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    align-items: center;
+}
+
+.logo{
+    margin: -5px 2px;
+    margin-top: -40px;
+    width:100%;
+}
+
+form div + div {
+   margin: 0px auto;
+   padding: 7px;
+   width: 0 auto;  
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 25px;
+    color: #ffffff;
+    padding: auto;
+    margin-top: 3px;
+    font-family:fonte2;
+    font-size: 15px;
+}
+
+input, textarea{
+    width: 230px;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin-top: -1px;
+    padding: auto;
+    font-family: fonte2;
+}
+
+textarea{
+    height:52px;
+}
+
+.button {
+    margin: 0 auto;
+    text-align:center;
+    bottom:10px;
+}
+
+button {
+    margin-left: 100%;   
+}
+
+.central{
+    margin: 0 auto;
+    text-align: center;
+}
+

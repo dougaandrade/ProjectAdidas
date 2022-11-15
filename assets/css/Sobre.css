@@ -1,0 +1,126 @@
+
+@font-face {
+    font-family:fonte2;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+
+body{
+    background-color:rgb(204, 204, 204)
+}
+
+.img_1{
+    width: 10px;
+    height:20px;
+}
+
+.img_2{
+    width:80px;
+    height:19px;
+}
+
+.img_3{
+    width:100%;
+    height:100%;
+}
+
+.cabeçalho{
+    background-color:#252525;
+    padding:20px;
+    margin:-8px;  
+    width:auto;
+    margin-top: -60px;
+    text-align: center;
+    align-items: center;
+}
+.logo_inicial{
+    margin: 0 auto;
+    margin-top:-1px;
+    align-items: center;
+}
+
+ul{
+    display: grid;
+    grid-template-areas:"texto1 texto2 texto3";
+    gap: 10vh;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.centro{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.texto1{
+    color: #000000;
+    font-family: fonte2;
+    text-align:justify;
+    font-size:19px;
+
+}
+
+.texto2{
+    color: #000000;
+    font-family: fonte2;
+    text-align:justify;
+    font-size:19px;
+}
+
+.texto3{
+    color: #000000;
+    font-family: fonte2;
+    text-align:justify;
+    font-size:19px;
+}
+
+.background1{
+    width:350px;
+    height: 200px;
+}
+
+.background2{
+    width:350px;
+    height: 200px;
+}
+
+.background3{
+    width:350px;
+    height: 200px;
+}
+
+.logo_inicial{
+    margin:0 auto;
+    margin-top:15px;
+    width: 10%;
+}
+
+.imagem{
+    margin-top: 30px;
+    margin-bottom: 19px;
+    margin:-8px;
+    width: auto;
+}
+.seta{
+    margin-top:15px;
+    width: 10px;
+}
+.seta:hover{
+    
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .3s ease;
+}
+.rodapé{
+    background-color:#252525;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:15px;
+    margin:-8px;
+    margin-top:4px;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    width:auto;
+    font-size:13px;
+     
+}
