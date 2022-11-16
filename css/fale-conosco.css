@@ -1,0 +1,110 @@
+
+@font-face {
+    font-family:fonte2;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+body{
+    background-color:rgb(204, 204, 204)
+}
+
+.cabeçalho{
+    background-color:#252525;
+    padding:12px;
+    margin:-8px;  
+    width:auto;
+    top:0px;
+    text-align: center;
+    align-items: center;
+}
+
+.seta{
+    margin-top:-37px;
+    width: 10px;
+}
+
+.seta:hover{
+    
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .3s ease;
+}
+
+.img_1{
+    width:80px;
+    height:19px;
+}
+
+.img_2{
+    width: 10px;
+    height:20px;
+}
+
+.logo_inicial{
+    margin:auto;
+    margin-top:2px;
+    margin-bottom: 0px;
+}
+
+.texto_principal{
+    font-family:fonte2; 
+    font-size: 25px;
+    margin-top: -20px;
+    color: #ffffff;
+    text-align:center;
+}
+
+form {
+    margin:0px auto;
+    width: 300px;
+    padding: 50px;
+    border-radius:40px;
+    background-color: #252525;
+    margin-top:110px;
+    font-family:fonte2;
+    box-shadow:0 10px 9px 0 rgba(0,0,0,0.24);
+}
+
+form div + div {
+    align-items:center; 
+}
+ 
+ label {
+     display: inline-block;
+     width: 100%;
+     margin: 0 auto;
+     color:#ffffff;
+}
+ 
+ input, textarea{
+     width: 290px;
+     margin-top: 3px;
+     margin-bottom: 10px;
+     font-family:fonte2;
+}
+ 
+textarea{
+    margin-left: 0 auto;
+    align-items: center;
+    height: 100px;
+}
+ 
+.button{ 
+     text-align:center;
+     margin: 0 auto;     
+}
+
+.rodapé{
+    background-color:#252525;
+    padding:14px;
+    margin:-8px;
+    margin-top: 50px;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    width: auto;   
+}
+
+.texto_rodapé{
+    font-family:arial,Helvetica,sans-serif;
+    font-size:13px;
+}
