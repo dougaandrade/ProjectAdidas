@@ -4,18 +4,19 @@
 }
 
 body{
-    background-color:rgb(204, 204, 204)
+    background-color:rgb(204, 204, 204);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .cabeçalho{
     background-color:#252525;
-    padding:15px;
-    margin:-8px;
-    margin-top: -40px;  
-    width:auto;
-    top:0px;
+    padding:20px;
+    margin-top: -45px;  
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .img_1{
@@ -33,15 +34,11 @@ body{
     height:70px;
 }
 
-.logo_inicial{
-    margin: 0 auto;
-    margin-top:1px;
-    align-items: center;
-}
-
 .seta{
-    margin-top:13px;
-    width: 9px;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 10px;
 }
 
 .seta:hover{
@@ -51,64 +48,84 @@ body{
     transition: transform .3s ease;
 }
 
-form{
-    width: 320px;
-    padding: 50px;
-    border-radius:50px;
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
     background-color: #252525;
-    margin: 0 auto;
-    margin-top:50px;
-    margin-bottom: 40px;
-    box-shadow:0 10px 9px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  
+    padding: 10%;
+    margin: 30%;
+    border-radius: 30px;
+   
+}
+
+.campos{
+    width: 100%;
+    padding:40px;
 }
 
 form div + div{
-   margin: 0px auto;
-   padding: 6px;
+   margin: 0;
+   padding: 1px;
 }
 
 label{
-    display: inline-block;
     color: #ffffff;
-    margin: 0px auto;
     font-family:fonte2;
+    padding: 6px;
+
 }
 
 input, textarea{
     width:200px;
-    padding: 10px;
-    margin: 0px auto;
+    padding: 6px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
     font-family: fonte2;
 }
 
-textarea{
-    height: 10px;
+.btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 .button1{
-    margin: 10px 61px;
+    justify-content: center;
+    align-items: center;
     text-align:center;
 }
 
 .button2{
-    margin: 10px 61px;
+    justify-content: center;
+    align-items: center;
     text-align:center;
+}
+
+.button3{
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+textarea{
+    height: 5px;
 }
 
 .texto_principal{
     font-family:fonte2; 
     font-size:49%;
     color: #ffffff;
-    margin: 20px auto;
     text-align: center;
 }
 
 .texto_secundario{
     font-family:fonte2; 
-    font-size:60%;
+    font-size:20px;
     color: #ffffff;
-    margin: 0 auto;
-    margin-top: -20px;
     text-align: center; 
 }
 

@@ -15,7 +15,49 @@ body{
     background-color:rgb(204, 204, 204)
 }
 
+ul{
+    list-style-type: none;
+    overflow:hidden;
+    width:auto;
+    padding:auto;
+    background-color: #dddddd;
+    color: #dddddd ;
+    margin:0;
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.24);
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display:flex;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:#aaa9a9;  
+    color:rgb(255, 255, 255);
+}
+
+.img_1{
+    width:45px;
+    height:30%;
+}
+
+
+.logo_barra{
+    margin: -30px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    width:100%;
+}
+
 .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -25,18 +67,16 @@ body{
     font-weight: bold;
     font-family: fonte1;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 50px;
     letter-spacing: 2px;
 
 }
 
 .tabela{
-    margin-left: 30vh;
     width: 70%;
     font-family: fonte2;
     text-align: center;
-    
     background-color: #ffffff;
     border-radius:15px;
     box-shadow:0 1px 5px 0 rgba(0,0,0,0.55);
@@ -46,6 +86,7 @@ body{
 .tabela thead{
     background:#eee;
     font-weight: bold;
+    border-radius:15px;
     color: rgb(59, 59, 59);   
 }
 

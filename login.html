@@ -38,31 +38,31 @@
     
 <!--Formulario-->
 
-    <form>
+    <form class="form">
         <div class="logo">
             <img src= "img/logoweb1.png" class="img_3"></a>
         </div>
         <div class="texto_principal">
             <h1>FAÇA O LOGIN E APROVEITE TODOS OS BENEFÍCIOS DO ADICLUB</h1>
+            <h1 class="texto_secundario">FAÇA SEU LOGIN</h1>
         </div>
-        <div class="texto_secundario">
-            <h1>FAÇA SEU LOGIN</h1>
-        </div>
-        <div>
-            <label for="email"><p>E-mail</p></label>
+        <div class="campos">
+            <label for="email">E-mail</label>
             <input type="text" id="nome" required autofocus name="usuario_nome" placeholder="E-mail *"/>
-        </div>
-        <div>
-            <label for="senha"><p>Senha</p></label>
+            <label for="senha">Senha</label>
             <input type="password" id="senha" required maxlength="8" name="usuario_email" placeholder="Insira sua Senha" />
         </div>
-        <div class="button1">
-            <input type="submit"value=Login>
-        </div>
-        <div class="button2">
-            <a href="Cadastro.html">
-            <input type="button" value="Cadastre-se"></a>
-        </div>
+        <div class="btn">
+            <div class="button1">
+                <input type="submit"value=Login>
+            </div>
+            <div class="button2">
+                <a href="cadastro.html">
+                <input type="button" value=Cadastre-se></a>
+            </div>
+            <div class="button3">
+                <a href="tabela-login.html"><input type="button" value=Adminstração></a>
+             </div>
         </div>
     </form>
 </body>
