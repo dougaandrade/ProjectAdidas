@@ -75,7 +75,8 @@ li a{
 
 li a:hover{
     background-color:#aaa9a9;  
-    color:rgb(255, 255, 255);
+    color:rgb(255, 255, 255,);
+    
 }
 
 .logo_inicial{
@@ -88,10 +89,10 @@ li a:hover{
 
 .cabeçalho{
     background-color:#252525;
-    padding:12px;
+    padding:15px;
     margin:-8px;  
     width:auto;
-    top:0px;
+
     text-align: center;
     align-items: center;
 }

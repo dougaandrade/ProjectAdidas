@@ -22,16 +22,21 @@ body{
     width:100%;
     height:100%;
 }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .cabeçalho{
+    display: flex;
+    flex-direction: row;
     background-color:#252525;
-    padding:20px;
-    margin:-8px;  
-    width:auto;
-    margin-top: -60px;
-    text-align: center;
+    padding:15px;  
     align-items: center;
+    
 }
+
 .logo_inicial{
     margin: 0 auto;
     margin-top:-1px;
@@ -50,6 +55,49 @@ ul{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.pessoas{
+    margin-bottom: 50px;
+}
+.container{
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.texto{
+    color: #000000;
+    font-family: fonte2;
+    text-align:justify;
+    font-size:19px;
+
+}
+
+#img{
+    width: 100px;
+    border-radius: 15px;
+    border: #252525 solid;
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,0.24);
+}
+
+
+.barra_mid{
+    background-color: #252525;
+    padding:1px;
+    top:0px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.texto_barra_mid{
+    font-family:fonte2; 
+    font-size:20px;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+    width: 100%;
+}
 
 .texto1{
     color: #000000;
@@ -57,6 +105,13 @@ ul{
     text-align:justify;
     font-size:19px;
 
+}
+
+.table:hover{
+
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: transform .3s ease;
 }
 
 .texto2{
@@ -75,35 +130,24 @@ ul{
 
 .background1{
     width:350px;
-    height: 200px;
 }
 
 .background2{
     width:350px;
-    height: 200px;
 }
 
 .background3{
     width:350px;
-    height: 200px;
 }
 
 .logo_inicial{
-    margin:0 auto;
-    margin-top:15px;
     width: 10%;
 }
 
-.imagem{
-    margin-top: 30px;
-    margin-bottom: 19px;
-    margin:-8px;
-    width: auto;
-}
 .seta{
-    margin-top:15px;
     width: 10px;
 }
+
 .seta:hover{
     
     -webkit-transform: scale(1.1);
@@ -111,15 +155,12 @@ ul{
     -webkit-transition: -webkit-transform .4s ease;
     transition: transform .3s ease;
 }
+
 .rodapé{
-    background-color:#252525;
+    background-color: #252525;
+    padding: 15px;
+    text-align: center;
+    color:#FFF;
     font-family:Arial, Helvetica, sans-serif;
-    padding:15px;
-    margin:-8px;
-    margin-top:4px;
-    text-align:center;
-    color:rgb(255, 255, 255);
-    width:auto;
     font-size:13px;
-     
 }

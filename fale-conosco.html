@@ -36,22 +36,31 @@
     </div> 
 
 <!--Formulário-->
-
+<div class="form">
     <form>
         <section class="texto_principal">
             <p><small>Contate-nos Através do Formulário Abaixo</p>
         </section>
         <div><br>
+            <label for="email">Nome</label><br>
+            <input type="text" id="nome" required autofocus name="usuario_nome" placeholder="Nome *"/>
             <label for="email">E-mail</label><br>
-            <input type="text" id="nome" required autofocus name="usuario_nome" placeholder="E-mail *"/>
+            <input type="text" id="e-mail" required autofocus name="usuario_e-mail" placeholder="E-mail *"/>
         </div>
         <label for="email">Mensagem</label><br>
         <textarea type="text" maxlength="1000" required autofocus name="descrição" placeholder="Deixe sua mensagem *" ></textarea>
         <div class="button">
             <input type="submit" value="ENVIAR">
         </div>
-        </div>
     </form>  
+</div>
+    
+    <footer>
+        <div class="rodapé">
+                Copyright (c) since 2022 CDG - Todos os direitos reservados
+        </div>
+    </footer>
+
        
 </body>
 </html>

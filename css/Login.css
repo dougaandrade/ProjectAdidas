@@ -11,12 +11,16 @@ body{
 }
 
 .cabeçalho{
+    display: flex;
+    flex-direction: row;
     background-color:#252525;
-    padding:20px;
-    margin-top: -45px;  
-    text-align: center;
+    padding:15px;  
     align-items: center;
-    justify-content: center;
+    
+}
+
+.logo_inicial{
+    padding-left: 46%;
 }
 
 .img_1{
@@ -35,11 +39,10 @@ body{
 }
 
 .seta{
-    margin: 0;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 10px;
+
 }
+
+
 
 .seta:hover{
     -webkit-transform: scale(1.1);
@@ -48,88 +51,92 @@ body{
     transition: transform .3s ease;
 }
 
-.form{
+.container{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 100%;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.form{
+    width: 30%;
+    padding: 15px;
     background-color: #252525;
-    padding: 10%;
-    margin: 30%;
     border-radius: 30px;
-   
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.55);
 }
 
 .campos{
-    width: 100%;
-    padding:40px;
-}
-
-form div + div{
-   margin: 0;
-   padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 label{
     color: #ffffff;
     font-family:fonte2;
-    padding: 6px;
-
+    text-align:center;
+    padding: 5px;
 }
 
 input, textarea{
-    width:200px;
-    padding: 6px;
-    margin: 0;
-    justify-content: center;
+    width:20rem;
+    padding: 10px;
+    border-radius: 5px;
     align-items: center;
     font-family: fonte2;
 }
 
 .btn{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+    margin: 20px;
+    
 }
 
 .button1{
     justify-content: center;
     align-items: center;
-    text-align:center;
+    padding: 10px;
 }
 
 .button2{
     justify-content: center;
     align-items: center;
-    text-align:center;
-}
-
-.button3{
-    justify-content: center;
-    align-items: center;
-    text-align:center;
+    padding: 10px;
 }
 
 textarea{
-    height: 5px;
+    height: 10px;
 }
 
 .texto_principal{
     font-family:fonte2; 
-    font-size:49%;
+    font-size:60%;
     color: #ffffff;
-    text-align: center;
+    padding: 10px;
 }
 
 .texto_secundario{
     font-family:fonte2; 
     font-size:20px;
     color: #ffffff;
-    text-align: center; 
+    padding: 5px; 
 }
 
 .logo{
-    margin:-10px 130px;
     width:100%;
+}
+
+
+.rodapé{
+    background-color: #252525;
+    padding: 15px;
+    text-align: center;
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
 }
