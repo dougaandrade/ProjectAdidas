@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color:rgb(204, 204, 204);
+    background-color:rgb(245, 244, 244);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,15 +58,15 @@ body{
     justify-content: center;
     text-align: center;
     width: 100%;
-    padding-top:40px;
-    padding-bottom:40px;
+    padding-top:10%;
+    padding-bottom:10%;
 }
 
 .form{
     width: 30%;
-    padding: 15px;
+    padding: 25px;
     background-color: #252525;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow:0 1px 5px 0 rgba(0,0,0,0.55);
 }
 
@@ -81,7 +81,7 @@ label{
     color: #ffffff;
     font-family:fonte2;
     text-align:center;
-    padding: 5px;
+    padding: 10px;
 }
 
 input, textarea{
@@ -94,6 +94,7 @@ input, textarea{
 
 .btn{
     margin: 20px;
+    padding: 10px;
     
 }
 
@@ -104,6 +105,11 @@ input, textarea{
 }
 
 .button2{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.button3{
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -129,6 +135,8 @@ textarea{
 
 .logo{
     width:100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 

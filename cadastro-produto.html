@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Titulo-->
+
+    <title>Cadastro dos Produtos</title>
+
+<!--Icone-->
+
+    <link rel="shortcut icon" href="img/logoweb.png" type="image/x-icon">
+
+<!--Link do CSS-->
+
+    <link rel="stylesheet" href="css/cadastro-produto.css">
+    
+</head>
+<body>
+
+<!--Logo do Rodapé-->
+
+    <div Class="cabeçalho">
+        <div class="seta"> 
+            <a href="adidas-principal.html"><img src="img/seta.png" class="img_2"></a>
+        </div>
+        <a href="adidas-principal.html">
+        <div class="logo_inicial">  
+            <img src= "img/logo1p.png" class="img_1"></a>
+        </div> 
+    </div>
+
+<!--Formulário-->
+<div class="form">
+   
+    <form name="form1" id="form1" action="#" method="post">
+        <input type="hidden" name="idfornecedor" value="" />
+
+        <div class="texto-principal">
+        <h1>Cadastro Produtos</h1>
+        </div>
+
+        <label class="label">Nome do produto</label>
+        <input type="text" value="" name="nome_produto" id="nome_produto" class="input" maxlength="45" size="60" placeholder="Digite o nome do produto" required />
+
+        <label class="label">Codigo do Produto</label>
+        <input type="text" value="" name="cod_prod" id="cod_prod" class="input" maxlength="60" size="60" placeholder="Digite o tipo do produto" required />
+        
+        <label class="label">Preço</label>
+        <input type="number" value="" name="preco" id="preco" class="input" maxlength="60" size="60" placeholder="R$ 000,00" required />
+        
+        <label class="label">Quantidade</label>
+        <input type="number" value="" name="qtn" id="qtn" class="input" maxlength="60" size="60" placeholder="00 Unid." required />
+
+
+        <label class="label">Cor</label>
+        <select  id="cor" required>
+            <optgroup label="Cores">
+            <option value=""></option>
+            <option value="-">N/A</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Preto">Preto</option>
+            <option value="Branco">Branco</option>
+            </optgroup>
+        </select>
+
+        <label class="label">Tipo Produto</label>
+        <select id="produtos" required >
+        <optgroup label="Tipos">
+            <option value=""></option>
+            <option value="-">N/A</option>
+            <option value="camisa">Camisa</option>
+            <option value="meia">Meia</option>
+            <option value="tenis">Tênis</option>
+            <option value="bola">Bola</option>
+            <option value="casaco">Casaco</option>
+            </optgroup>
+        </optgroup>
+        </select>
+        <br><br>
+
+        <label class="label">Tamanho Roupa</label>
+            <div class="nivel" id="cam">
+                <input type="radio" name="opcao1" value="-" id="pass0" class="input" checked required />N/D
+                <input type="radio" name="opcao1" value="P" id="pass1" class="input" required />P
+                <input type="radio" name="opcao1" value="M" id="pass2" class="input" required />M
+                <input type="radio" name="opcao1" value="G" id="pass3" class="input" required />G
+            </div>
+
+        <label class="label">Tamanho Calçado</label>
+            <div class="nivel" id="pe">
+            <input type="radio" name="opcao2" value="-" id="pass7" class="input" checked required />N/D
+            <input type="radio" name="opcao2" value="40/41" id="pass4" class="input" required />40/41
+            <input type="radio" name="opcao2" value="41/42" id="pass5" class="input" required />41/42
+            <input type="radio" name="opcao2" value="43/44" id="pass6" class="input" required />43/44
+            </div>
+
+        <label class="label">Descrição do Produto</label>
+            <textarea type="text" maxlength="1000"  id="descricao" placeholder="Descrição do produto*" required  ></textarea>
+            <div class="button">
+
+        <label class="label">Materiais do Produto</label>
+        <textarea type="text" maxlength="1000" id="materiais" placeholder="Materiais do produto*" required  ></textarea>
+           
+            <div class="button">
+                <input type="submit" id="enviar" value="ENVIAR">
+                <input type="reset" id="limpar" value="LIMPAR">
+            </div>
+
+        </form>
+</div>
+
+<div class="tabCadastro">
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Nome do produto</th>
+                <th>Codigo do Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Cor</th>
+                <th>Tipo Produto</th>
+                <th>Tamanho Roupa</th>
+                <th>Tamanho Calçado</th>
+                <th>Descrição do Produto</th>
+                <th>Materiais do Produto</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr class="tr">
+                <td class="td-nomeProd">
+                    Camisa Flamengo
+                </td>
+                <td class="td-CodProd">
+                    DG#0000
+                </td>
+                <td class="td-preco">
+                    R$ 10,00
+                </td>
+                <td class="td-qtd">
+                    35 Unid.
+                </td>
+                <td class="td-cor">
+                    Branca
+                </td>
+                <td class="td-tipo">
+                    Camisa
+                </td>
+                <td class="td-tamRoupa">
+                    G
+                </td>
+                <td class="td-tamCalcado">
+                    
+                </td>
+                <td class="td-descProd">
+                    Camisa meia boca
+                </td>
+                <td class="td-matProd">
+                    Lágrimas de vascaino
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <footer>
+        <div class="rodapé">
+                Copyright (c) since 2022 CDG - Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script src="js/cadastro-produto.js"></script>
+</body>
+</html>
