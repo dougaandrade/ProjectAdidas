@@ -3,56 +3,12 @@
     src: url(fonts/Montserrat-SemiBold.ttf);
 }
 
-body{
-    background-color:rgb(245, 244, 244);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.cabeçalho{
-    display: flex;
-    flex-direction: row;
-    background-color:#252525;
-    padding:15px;  
-    align-items: center;
-    
-}
-
-.logo_inicial{
-    padding-left: 46%;
-}
-
-.img_1{
-    width:10px;
-    height:20px;
-}
-
-.img_2{
-    width:80px;
-    height:19px;
-}
-
-.img_3{
+.img_3_login{
     width:65px;
     height:70px;
 }
 
-.seta{
-
-}
-
-
-
-.seta:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: -webkit-transform .4s ease;
-    transition: transform .3s ease;
-}
-
 .container{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,8 +18,21 @@ body{
     padding-bottom:10%;
 }
 
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
 .form{
-    width: 30%;
+    width: 20%;
     padding: 25px;
     background-color: #252525;
     border-radius: 10px;
@@ -80,7 +49,7 @@ body{
 label{
     color: #ffffff;
     font-family:fonte2;
-    text-align:center;
+    text-align:left;
     padding: 10px;
 }
 
@@ -93,9 +62,8 @@ input, textarea{
 }
 
 .btn{
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
-    
 }
 
 .button1{
@@ -137,14 +105,4 @@ textarea{
     width:100%;
     padding-bottom: 20px;
     padding-top: 20px;
-}
-
-
-.rodapé{
-    background-color: #252525;
-    padding: 15px;
-    text-align: center;
-    color:#FFF;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:13px;
 }

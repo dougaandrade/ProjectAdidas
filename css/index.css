@@ -13,24 +13,37 @@
     src: url(fonts/BebasNeue-Regular.otf);
 }
 
+body {
+    background-color: rgb(245, 244, 244)
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .img_tp{
     width:50px;
     height:9%;
 }
 
 .img_1{
-    width:45px;
-    height:30%;
+    width:3rem;
 }
 
 .img_2{
     width:100%;
-    height:100%;
 }
 
 .img_3{
-    width:100%;
-    height:100%;
+    width:50%;
+
 }
 
 .img_all{
@@ -42,23 +55,35 @@
     height:20px;
 }
 
-
-
-
-body{
-    background-color:rgb(245, 244, 244)
+ion-icon{
+    color:white;
+    font-size:20px;
 }
 
-ul{
-    list-style-type: none;
-    overflow:hidden;
-    width:auto;
-    padding:auto;
-    background-color: #dddddd;
-    color: #dddddd ;
-    margin:-8px -8px;
-    margin-top: 1px;
-    box-shadow:0 1px 5px 0 rgba(0,0,0,0.24);
+#navbar{
+    width:100%;
+    background-color: #252525;
+}
+
+.containernav{
+    display: flex;
+    padding: 9px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-ul{
+    display: flex;
+    list-style: none;
+    font-size: 0.6rem;
+    font-family: fonte2;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 0px 0px 0px auto;
+    float: right;
 }
 
 li{
@@ -66,35 +91,17 @@ li{
 }
 
 li a{
-    display:flex;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding:10px;
     margin: 8px;
     text-decoration: none;
 }
 
-li a:hover{
-    background-color:#aaa9a9;  
-    color:rgb(255, 255, 255,);
-    
-}
-
 .logo_inicial{
     margin:0 auto;
-    margin-top:-3px;
     align-items: center;
     width:100%;
     opacity: 0.0;
-}
-
-.cabeçalho{
-    background-color:#252525;
-    padding:15px;
-    margin:-8px;  
-    width:auto;
-
-    text-align: center;
-    align-items: center;
 }
 
 .barra_posição_texto{
@@ -104,7 +111,7 @@ li a:hover{
 }
 
 .logo_barra{
-    margin: -30px;
+    margin: 30px;
     margin-top: 1px;
     margin-bottom: 0px;
     width:100%;
@@ -154,20 +161,12 @@ li a:hover{
 }
 
 .imagem_central{
-    margin-top:20px;
-    margin-bottom: 20px;
-    margin-left: -8px;
-    margin-right: -8px;
-    width: 100% auto;
+    margin: 0 auto;
 }
 
 .barra_mid{
-    background-color: #252525;
-    margin:-8px;  
+    background-color: #252525; 
     padding:15px;
-    width:auto;
-    top:0px;
-    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -175,11 +174,7 @@ li a:hover{
     font-family:fonte; 
     font-size:20px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     color: #ffffff;
-
-    width: 100%;
 }
 
 .gif_central{
@@ -240,18 +235,18 @@ li a:hover{
     -webkit-transition: -webkit-transform .4s ease;
     transition: transform .3s ease;
 }
-.rodapé{
+
+footer{
+    height: 10vh;
     background-color:#252525;
-    padding:15px;
-    margin:-8px;
-    margin-top: 50px;
+}
+
+.rodapé{
     text-align:center;
     color:rgb(255, 255, 255);
-    width:0 auto; 
-    
 }
 
 .texto_rodapé{
     font-family:arial,Helvetica,sans-serif;
-    font-size:13px;
+    font-size:1rem;
 }

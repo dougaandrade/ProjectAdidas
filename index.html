@@ -10,7 +10,7 @@
 
 <!--Titulo da Aba-->
 
-    <title>Adidas Oficial</title>
+    <title>Adidas Project</title>
 
 <!--Icone da aba-->
 
@@ -19,6 +19,7 @@
 <!--Links de todas as abas-->
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
 
 </head>
 
@@ -27,31 +28,17 @@
 
 
 <body>
-
-<!--Logo cabeçalho-->
-
-
-    <div Class="cabeçalho">
-        <div class="logo_inicial">  
-            <img src= "img/logo1p.png" alt="logo" class="img_tp">
-        </div>
-    </div>
-    
+   
 <!--Barra de Tarefas-->
 
-    <nav>
-        <div>
-            <ul>
-                <li><a href="login.html"><img src= "img/login.png" class="img_barra"></a></li>
-                <li><a href="loja.html"><img src= "img/bag.png" class="img_barra"></a></li>
-            <div class="active">
-            <div class="barra_posição_texto">
+    <nav id="navbar">
+        <div class="containernav">
+            <img src= "img/logoweb1.png" class="img_1"></a>
+            <ul id="container-ul">
                 <li><a href="fale-conosco.html">Fale Conosco</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
-            </div>
-            </div>
-                <div class="logo_barra">
-                    <img src= "img/logoweb.png" class="img_1"></a>
+                <li><a href="loja.html"><ion-icon name="bag-outline"></ion-icon></a></li>
+                <li><ion-icon name="person-outline" id="login"></ion-icon></li>
                 </div>
             </ul>
         </div>
@@ -120,18 +107,55 @@
             </div>
         </section>
     </div>
-   
+<!--Modal-->
+    <div id="modallog" class="modal">
+        <div class="container">
+        <form class="form" action="index.html" method="get">
+            <div class="logo">
+                <img src= "img/logoweb1.png" class="img_3_login"></a>
+            </div>
+            <div class="texto_principal">
+                <h1 class="texto_secundario">FAÇA SEU LOGIN</h1>
+            </div>
+            <div class="campos">
+                <label for="email">E-mail</label>
+                <input type="text" id="nome" required autofocus name="usuario_nome" placeholder="E-mail *"/>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" required maxlength="8" name="usuario_email" placeholder="Insira sua Senha" />
+            <div class="btn">
+                <div class="button1">
+                    <input type="submit" value=Login>
+                </div>
+                <div class="button2">
+                    <a href="cadastro.html">
+                    <input type="button" value=Cadastre-se></a>
+                </div>
+                <div class="button3">
+                    <a href="cadastro-produto.html">
+                    <input type="button" value=Cadastro-Produto></a>
+                </div>
+             </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
 <!--Rodapé -->
         
     <footer>
         <div class="rodapé"> 
             <div class="texto_rodapé">
                 <small>
-                    Copyright (c) since 2022 CDG - Todos os direitos reservados
+                    Copyright (c) since 2022 CDG - Trabalho com Fins Academicos - Estácio SE
                 </small>
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/modal.js"></script>
 
 </body>
 </html>
