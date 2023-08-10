@@ -82,6 +82,7 @@ a {
     justify-content: center;
     text-align: center;
     padding-top:10%;
+    gap: 20px;
     padding-bottom:10%;
 }
 
@@ -105,33 +106,31 @@ a {
 .texto{
     color: #000000;
     font-family: fonte2;
-    text-align:justify;
+    text-align:center;
     font-size:19px;
 }
 
-#img{
-    width: 100px;
-    border-radius: 15px;
+.img{
+    width: 200px;
+    border-radius: 200px;
     border: #252525 solid;
     box-shadow: 0 8px 6px 0 rgba(0,0,0,0.24);
 }
 
 .barra_mid{
     background-color: #252525;
-    padding:1px;
-    top:0px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+    margin: 40px 0 40px 0;
 }
 
 .texto_barra_mid{
+    display: flex;
     font-family:fonte2; 
     font-size:20px;
+    justify-content: center;
     text-align: center;
     align-items: center;
     color: #ffffff;
-    margin-bottom: 15px;
+    padding: 15px;
     width: 100%;
 }
 
@@ -140,14 +139,11 @@ a {
 .texto3{
     color: #000000;
     font-family: fonte2;
-    text-align:justify;
+    text-align:center;
     font-size:19px;
 }
 
-
-
-.table:hover{
-
+.peolpe:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     transition: transform .3s ease;
