@@ -14,66 +14,47 @@
 
 <!--Icone da aba-->
 
-    <link rel="shortcut icon" href="img/logoweb.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/logoweb1.png" type="image/x-icon">
 
 <!--Links de todas as abas-->
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 
 </head>
-
-
-<!--Cor do fundo da página-->
-
-
-<body>
+    <body>
    
 <!--Barra de Tarefas-->
-
+<header>
     <nav id="navbar">
         <div class="containernav">
-            <img src= "img/logoweb1.png" class="img_1"></a>
+            <img src= "assets/img/logoweb1.png" class="img_1"></a>
             <ul id="container-ul">
-                <li><a href="fale-conosco.html">Fale Conosco</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="loja.html"><ion-icon name="bag-outline"></ion-icon></a></li>
+                <li><a href="/assets/html/fale-conosco.html">Fale Conosco</a></li>
+                <li><a href="/assets/html/sobre.html">Sobre Nós</a></li>
+                <li><a href="/assets/html/loja.html"><ion-icon name="bag-outline"></ion-icon></a></li>
                 <li><ion-icon name="person-outline" id="login"></ion-icon></li>
                 </div>
             </ul>
         </div>
     </nav>      
-
+</header>
 <!--Gif da pagina-->
 
-    <div class="texto_central">
-           <h1>DE UM <i> BOOST NO SEU DESEMPENHO</h1>
-        <div class="gif_central1">
-           <img src="img/add.gif" alt="Shoes Ultra Boost" class="img_2">
-        </div></br>
+<div class="row">
+    <div class="container">
+        <div class="colunm-1">
+           <h1>DE UM <i> BOOST NO SEU DESEMPENHO</i></h1>
+            <div class="gif_central1">
+            <img src="assets/img/add.gif" alt="Shoes Ultra Boost" class="img_tenis1">
+            </div>
+            <div class="texto_botao"><i>UTLRA BOOST 360</i>
+           </div>
+           <button class="botão_comprar" button onclick="document.location='loja.html'"><i>COMPRE AGORA</i></button>
+        </div>
     </div>
+</div>
 
-
-<!--Texto da pagina-->
-
-    <div class="texto_botao">
-        <br><b><i>UTLRA BOOST 360</i>
-    </div>
-
-
-<!--Botão para comprar-->
-
-    <br><div class="botão_comprar" button 
-         onclick="document.location='loja.html'"> 
-         <i>COMPRE AGORA</i>
-        </button >
-    </div>
-    
-<!--Imagem-->
-
-    <div class="imagem_central">
-        <img src="img/addi2.jpg" class="img_3">
-    </div>
 
 <!--Texto da pagina-->
 
@@ -90,29 +71,30 @@
             <div class="gif_central">
                 <div class="gif_1">
                     <small>ULTRA BOST PREMIUM</small>
-                    <a href="loja.html">
-                    <img src="img/add3.gif" class="img_all"></a>
+                    <a href="/assets/html/loja.html">
+                    <img src="assets/img/add3.gif" class="img_all"></a>
                 </div>
 
                 <div class="gif_2">
                     <small>ADIDAS FORUM PREMIUM</small>
                     <a href="loja.html">
-                    <img  src="img/add4.gif" class="img_all"></a>
+                    <img  src="assets/img/add4.gif" class="img_all"></a>
                 </div>
                 <div class="gif_3">
                     <small>ADIDAS ZX PREMIUM</small>
                     <a href="loja.html">
-                    <img src="img/add2.gif" class="img_all"></a>
+                    <img src="assets/img/add2.gif" class="img_all"></a>
                 </div>
             </div>
         </section>
     </div>
+
 <!--Modal-->
     <div id="modallog" class="modal">
         <div class="container">
         <form class="form" action="index.html" method="get">
             <div class="logo">
-                <img src= "img/logoweb1.png" class="img_3_login"></a>
+                <img src= "assets/img/logoweb1.png" class="img_3_login"></a>
             </div>
             <div class="texto_principal">
                 <h1 class="texto_secundario">FAÇA SEU LOGIN</h1>
@@ -143,11 +125,9 @@
 <!--Rodapé -->
         
     <footer>
-        <div class="rodapé"> 
-            <div class="texto_rodapé">
-                <small>
-                    Copyright (c) since 2022 CDG - Trabalho com Fins Academicos - Estácio SE
-                </small>
+        <div class="container-rodape">
+            <div class="texto_rodape">
+                <h1>Copyright (c) since 2022 CDG - Trabalho com Fins Academicos - Estácio SE</h1>
             </div>
         </div>
     </footer>
@@ -155,7 +135,8 @@
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/js/modal.js"></script>
+    <script src="assets/js/animate.js"></script>
+    <script src="assets/js/modal.js"></script>
 
-</body>
+    </body>
 </html>

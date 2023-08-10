@@ -1,15 +1,31 @@
 @font-face {
     font-family:fonte;
-    src: url(fonts/Montserrat-Bold.ttf);
+    src: url(/assets/fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family:fonte1;
-    src: url(fonts/SF\ MOVIE\ POSTER\ BOLD.TTF);
+    src: url(/assets/fonts/SF\ MOVIE\ POSTER\ BOLD.TTF);
 }
 
-body{
-    background-color:rgb(204, 204, 204)
+@font-face {
+    font-family: fonte5;
+    src: url(/assets/fonts/Nunito-LightItalic.ttf);
+}
+
+body {
+    background-color: rgb(245, 244, 244)
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .img_1{
@@ -24,6 +40,21 @@ body{
 
 .img_all{
     width:100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cards{
+    width: 100%;
+    padding: 100px 0 100px 0;
 }
 
 .card1 {
@@ -166,44 +197,74 @@ ul{
     margin: 0 auto;
 }
 
-.cabeçalho{
-    background-color:#252525;
-    padding:15px;
-    margin:-8px;  
-    width:auto;
-    top:0px;
-    text-align: center;
+#navbar {
+    width: 100%;
+    background-color: #252525;
+}
+
+.containernav {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
     align-items: center;
 }
-.logo_inicial{
-      margin: 0 auto;
-      margin-top:-1px;
-      align-items: center;
+
+#container-ul {
+    display: flex;
+    list-style: none;
+    font-size: 0.6rem;
+    font-family: fonte2;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 0px 0px 0px auto;
+    float: right;
 }
-.seta{
-    margin-top:-37px;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.logo_inicial {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.seta {
     width: 10px;
 }
-.seta:hover{
-    
+
+.seta:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition: -webkit-transform .4s ease;
     transition: transform .3s ease;
 }
 
-.rodapé{
-    background-color:#252525;
-    padding:14px;
-    margin:-8px;
-    margin-top: 50px;
-    text-align:center;
-    color:rgb(255, 255, 255);
-    width: auto; 
-    
+/* footer */
+
+footer {
+    background-color: #252525;
+    margin:50px 0 0 0
 }
 
-.texto_rodapé{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:12px;
+.container-footer{
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_rodape {
+    font-family: fonte5;
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
 }

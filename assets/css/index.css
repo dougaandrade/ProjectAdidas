@@ -1,16 +1,20 @@
 @font-face {
     font-family:fonte;
-    src: url(fonts/Montserrat-Bold.ttf);
+    src: url(/assets/fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family:fonte2;
-    src: url(fonts/Montserrat-SemiBold.ttf);
+    src: url(/assets/fonts/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
     font-family:fonte4;
-    src: url(fonts/BebasNeue-Regular.otf);
+    src: url(/assets/fonts/BebasNeue-Regular.otf);
+}
+@font-face {
+    font-family:fonte5;
+    src: url(/assets/fonts/Nunito-LightItalic.ttf);
 }
 
 body {
@@ -26,6 +30,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  list-style-type: ;
 }
 
 .img_tp{
@@ -41,10 +46,6 @@ a {
     width:100%;
 }
 
-.img_3{
-    width:50%;
-
-}
 
 .img_all{
     width:100%;
@@ -86,6 +87,17 @@ ion-icon{
     float: right;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+
 li{
     float: right;
 }
@@ -116,7 +128,10 @@ li a{
     margin-bottom: 0px;
     width:100%;
 }
-.texto_central{
+.colunm-1{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
     font-size:30px;
     text-align:center;
     font-family: fonte4;
@@ -129,35 +144,57 @@ li a{
     margin-top:30px;
     padding: 5px;
     margin: 0 auto;
-    width:40%;
 }
 
 
 .texto_botao{
     font-family:Arial, Helvetica, sans-serif; 
     font-size:23px;
+    font-weight: 800;
+    padding-bottom: 10px;
     text-align: center;
-    margin: 0 auto;
 }
 
 .botão_comprar{
-    width: 175px;
-    background:#252525;
-    border-radius: 53px;  
-    line-height:40px;
-    height: 40px;
-    margin: 0 auto;
-    text-align:center;
-    font-family:fonte; 
-    color: #ffffff;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
 }
 
-.botão_comprar:hover{
-    box-shadow: 0 8px 6px 0 rgba(0,0,0,0.24);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: -webkit-transform .4s ease;
-    transition: transform .3s ease;
+.botão_comprar::before{
+   width: 130px;
+   height: 130px;
+   position: absolute;
+   content: "";
+   background-color: white;
+   border-radius: 50%;
+   left: -100%;
+   top: 0;
+   transition-duration: .3s;
+   mix-blend-mode: difference;
+}
+
+.botão_comprar:hover::before{
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.botão_comprar:active{
+    transform: translate(5px,5px);
+    transition-duration: .3s;  
 }
 
 .imagem_central{
@@ -236,9 +273,14 @@ li a{
     transition: transform .3s ease;
 }
 
+/* footer */
+
 footer{
-    height: 10vh;
+    height:6vh;
     background-color:#252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rodapé{
@@ -246,7 +288,9 @@ footer{
     color:rgb(255, 255, 255);
 }
 
-.texto_rodapé{
-    font-family:arial,Helvetica,sans-serif;
-    font-size:1rem;
+.texto_rodape{
+    font-family:fonte5;
+    font-size:0.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
 }

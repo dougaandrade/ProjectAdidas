@@ -1,40 +1,34 @@
+
 @font-face {
     font-family:fonte2;
     src: url(fonts/Montserrat-SemiBold.ttf);
 }
-.body{
-    background-color:rgb(204, 204, 204)
+body{
+    background-color:rgb(245, 244, 244);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.cabeçalho{
-    background-color:#252525;
-    padding:15px;
-    margin:-8px;
-    margin-top: -40px;  
-    width:auto;
-    top:0px;
+
+.texto-principal{
+    font-family:fonte2; 
+    font-size:90%;
+    color: #ffffff;
+    padding: 10px;
     text-align: center;
+}
+
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content:center;
+    background-color:#252525;
+    padding:15px; 
 }
-.logo_inicial{
-    margin: 0 auto;
-    margin-top:-1px;
-    align-items: center;
-}
-.img_1{
-    width: 10px;
-    height:20px;
-}
-.img_2{
-    width:80px;
-    height:19px;
-}
-.img_3{
-    width:65px;
-    height:70px;
-}
+
 .seta{
-    margin-top:15px;
-    width: 10px;
+    justify-content: flex-start;
 }
 
 .seta:hover{
@@ -44,66 +38,170 @@
     transition: transform .3s ease;
 }
 
-form {
-    margin:0px auto;
-    width: 290px;
-    padding: 60px;
-    border-radius:60px;
-    background-color: #252525;
-    margin-top:80px;
-    box-shadow:0 10px 9px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.img_1{
+    width:80px;
+    height:19px;
+}
+
+.img_2{
+    width: 10px;
+    height:20px;
+}
+.img_3{
+    width:65px;
+    height:70px;
+}
+
+.logo_inicial{
+    margin:auto;
     align-items: center;
+    justify-content: center;
 }
 
 .logo{
-    margin: -5px 2px;
-    margin-top: -40px;
-    width:100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+form {
+    margin:auto;
+    width: 300px;
+    padding: 50px;
+    border-radius:10px;
+    background-color: #252525;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family:fonte2;
+    box-shadow:0 10px 9px 0 rgba(0,0,0,0.24);
 }
 
 form div + div {
-   margin: 0px auto;
-   padding: 7px;
-   width: 0 auto;  
+    align-items:center; 
+}
+ 
+ label {
+     display: inline-block;
+     width: 100%;
+     margin: 0 auto;
+     color:#ffffff;
+}
+ 
+ input, textarea{
+     width: 290px;
+     height: 20px;
+     margin-top: 3px;
+     margin-bottom: 10px;
+     font-family:fonte2;
+     padding-left: 10px;
+     border: 2px #cecece inset;
+     border-radius: 5px;
 }
 
-label {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-    margin-left: 25px;
-    color: #ffffff;
-    padding: auto;
-    margin-top: 3px;
-    font-family:fonte2;
-    font-size: 15px;
-}
-
-input, textarea{
-    width: 230px;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    margin-top: -1px;
-    padding: auto;
-    font-family: fonte2;
+#enviar, #limpar {
+    border: none !important;
 }
 
 textarea{
-    height:52px;
+    margin-left: 0 auto;
+    align-items: center;
+    height: 100px;
 }
 
-.button {
-    margin: 0 auto;
-    text-align:center;
-    bottom:10px;
+.nivel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+}
+ 
+.button{ 
+     text-align:center;
+
+     padding-top:20px;
+     padding-bottom: 10px; 
+        
+
 }
 
-button {
-    margin-left: 100%;   
-}
 
-.central{
-    margin: 0 auto;
+.rodapé{
+    background-color: #252525;
+    padding: 15px;
     text-align: center;
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
 }
 
+
+
+.tabCadastro {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.form {
+    height: 100%;
+}
+
+.headline {
+    font-size:3.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: fonte1;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+
+}
+
+.tabela{
+    width: 100%;
+    font-family: fonte2;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius:5px;
+    box-shadow:0 1px 5px 0 rgba(0,0,0,0.55);
+    margin-bottom: 8%;
+}
+
+.tabela thead{
+    background:#eee;
+    font-weight: bold;
+    border-radius:5px;
+    color: rgb(59, 59, 59);  
+}
+
+thead {
+    width: 100%;
+    height: 50px;
+}
+table, th, td {
+    border:1px rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 8px;
+    border-bottom: 1px;
+}
+
+tr {
+    font-size: 12px;
+}
+
+tr:hover {
+    background-color: #111;
+    color: #ffffff;
+     
+}
+
+.nivel1{
+    opacity: 0.0;
+}

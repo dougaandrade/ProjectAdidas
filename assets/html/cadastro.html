@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<!--Titulo-->
+
+    <title>Cadastro</title>
+
+<!--Icone-->
+
+    <link rel="shortcut icon" href="img/logoweb.png" type="image/x-icon">
+
+<!--Link do CSS-->
+
+    <link rel="stylesheet" href="/css/Cadastro.css">
+    
+</head>
+<body>
+
+
+    <div Class="cabeçalho">
+        <div class="seta"> 
+            <a href="index.html"><img src="img/seta.png" class="img_2"></a>
+        </div>
+        <a href="index.html">
+        <div class="logo_inicial">  
+            <img src= "img/logo1p.png" class="img_1"></a>
+        </div> 
+    </div>
+
+<!--Formulário-->
+<div class="form">
+   
+        <form name="form1" id="form1" action="" method="get">
+            <input type="hidden" name="idpessoa" value="" />
+
+            <div class="logo">
+                <img src= "img/logoweb1.png" class="img_3"></a>
+            </div>
+
+            <label class="label">Nome</label>  
+            <input type="text" value="" name="nome" id="nome" class="input" maxlength="45" size="60" placeholder="Informe o seu nome" required />
+
+            <label class="label">CPF</label>
+            <input type="number" value="" name="cpf" id="cpf" class="input"  size="30" placeholder="Insira seu CPF"  />
+            
+            <label class="label">Nome de Usuario</label>
+            <input type="text" value="" name="nome_usuario" id="nome_usuario" class="input" maxlength="35" size="70" placeholder="Informe seu usuário" required />
+
+            <label class="label">Telefone</label>
+            <input type="text" value="" name="telefone" id="telefone" class="input" maxlength="16" size="30" placeholder="(79) 9 1111-2222" required /> 
+
+            <label class="label">Endereço</label>
+            <input type="text" value="" name="endereco" id="endereco" class="input" maxlength="100" size="60" placeholder="Informe o seu endereço" required />
+
+            <label class="label">E-mail</label>
+            <input type="email" value="" name="email" id="email" class="input" maxlength="100" size="60" placeholder="email@.email.com" required />
+
+            <label class="label">Nova Senha</label>
+            <input type="password" value="" name="senha" id="senha" class="input" size="30" placeholder="Informe seu senha" required />
+            
+            <label for="pass">Senha</label>
+            <input type="password" value="" name="senhaRepeat" id="senhaRepeat" class="input" size="30" placeholder="Digite novamente sua senha" required />
+            
+
+            <label for="label">Nivel</label>
+            <div class="nivel">
+            <input type="radio" name="opcao" value="Clt" id="pass1" class="nivel" required />Cliente
+            <input type="radio" name="opcao" value="Adm" id="pass2" class="nivel" required />Adminstrador
+            <input type="radio" name="opcao" value="Dev" id="pass3" class="nivel" required />Desenvolvedor
+            <input type="radio" name="opcao" value="-" id="pass0" class="nivel1" checked required />
+            </div>
+
+            <div class="button">
+                <input type="submit" id="enviar" value="ENVIAR">
+                <input type="reset" id="limpar"  value="LIMPAR">
+            </div>
+
+        
+    </form>  
+</div>
+
+<div class="tabCadastro">
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>NOME</th>
+                <th>CPF</th>
+                <th>NOME DE USUÁRIO</th>
+                <th>TELEFONE</th>
+                <th>ENDEREÇO</th>
+                <th>E-MAIL</th>
+                <th>SENHA</th>
+                <th>NÍVEL</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr class="tr">
+                <td class="td-nome">
+                    Douglas
+                </td>
+                <td class="td-cpf">
+                    11122233344
+                </td>
+                <td class="td-username">
+                    dgandrade
+                </td>
+                <td class="td-tel">
+                    (79) 9 0000-0000
+                </td>
+                <td class="td-endereco">
+                    Rua de algum lugar, Centro, N.S. do Socorro
+                </td>
+                <td class="td-email">
+                    dgandrade@gmail.com
+                </td>
+                <td class="td-password">
+                    admin123
+                </td>
+                <td class="td-nivel">
+                    Adm
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <div class="rodapé">
+            Copyright (c) since 2022 DOUG - Todos os direitos reservados
+    </div>
+</footer>
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html>

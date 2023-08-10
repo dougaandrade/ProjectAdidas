@@ -1,72 +1,142 @@
 
 @font-face {
     font-family:fonte2;
-    src: url(fonts/Montserrat-SemiBold.ttf);
+    src: url(/assets/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family:fonte5;
+    src: url(/assets/fonts/Nunito-LightItalic.ttf);
 }
 
-body{
-    background-color:rgb(204, 204, 204)
+body {
+    background-color: rgb(245, 244, 244)
 }
 
-.img_1{
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img_1 {
+    width: 80px;
+    height: 19px;
+}
+
+.img_2 {
     width: 10px;
-    height:20px;
+    height: 20px;
 }
 
-.img_2{
-    width:80px;
-    height:19px;
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.img_3{
+#navbar{
     width:100%;
-    height:100%;
+    background-color: #252525;
 }
 
-.cabeçalho{
-    background-color:#252525;
-    padding:20px;
-    margin:-8px;  
-    width:auto;
-    margin-top: -60px;
+.containernav{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-ul{
+    display: flex;
+    list-style: none;
+    font-size: 0.6rem;
+    font-family: fonte2;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 0px 0px 0px auto;
+    float: right;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+.container-people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top:10%;
+    padding-bottom:10%;
+}
+
+.container-text{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.seta{
+    width: 10px;
+}
+.seta:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .3s ease;
+}
+
+.texto{
+    color: #000000;
+    font-family: fonte2;
+    text-align:justify;
+    font-size:19px;
+}
+
+#img{
+    width: 100px;
+    border-radius: 15px;
+    border: #252525 solid;
+    box-shadow: 0 8px 6px 0 rgba(0,0,0,0.24);
+}
+
+.barra_mid{
+    background-color: #252525;
+    padding:1px;
+    top:0px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.texto_barra_mid{
+    font-family:fonte2; 
+    font-size:20px;
     text-align: center;
     align-items: center;
-}
-.logo_inicial{
-    margin: 0 auto;
-    margin-top:-1px;
-    align-items: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
-ul{
-    display: grid;
-    grid-template-areas:"texto1 texto2 texto3";
-    gap: 10vh;
-    list-style: none;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.centro{
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.texto1{
-    color: #000000;
-    font-family: fonte2;
-    text-align:justify;
-    font-size:19px;
-
-}
-
-.texto2{
-    color: #000000;
-    font-family: fonte2;
-    text-align:justify;
-    font-size:19px;
-}
-
+.texto1, 
+.texto2, 
 .texto3{
     color: #000000;
     font-family: fonte2;
@@ -74,53 +144,40 @@ ul{
     font-size:19px;
 }
 
-.background1{
-    width:350px;
-    height: 200px;
-}
 
-.background2{
-    width:350px;
-    height: 200px;
-}
 
-.background3{
-    width:350px;
-    height: 200px;
-}
+.table:hover{
 
-.logo_inicial{
-    margin:0 auto;
-    margin-top:15px;
-    width: 10%;
-}
-
-.imagem{
-    margin-top: 30px;
-    margin-bottom: 19px;
-    margin:-8px;
-    width: auto;
-}
-.seta{
-    margin-top:15px;
-    width: 10px;
-}
-.seta:hover{
-    
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -webkit-transition: -webkit-transform .4s ease;
     transition: transform .3s ease;
 }
-.rodapé{
-    background-color:#252525;
-    font-family:Arial, Helvetica, sans-serif;
-    padding:15px;
-    margin:-8px;
-    margin-top:4px;
-    text-align:center;
-    color:rgb(255, 255, 255);
-    width:auto;
-    font-size:13px;
-     
+
+
+.background1, 
+.background2, 
+.background3{
+    width:350px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #252525;
+    margin: 300px 0 0 0
+}
+
+.container-footer {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_rodape {
+    font-family: fonte5;
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
 }
