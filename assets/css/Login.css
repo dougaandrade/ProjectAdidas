@@ -1,16 +1,16 @@
 @font-face {
-    font-family:fonte2;
+    font-family: fonte2;
     src: url(/assets/fonts/Montserrat-SemiBold.ttf);
 }
 
-.img_3_login{
-    width:65px;
-    height:70px;
+.img_3_login {
+    width: 65px;
+    height: 70px;
 }
 
 
 .modal {
-    display:none;
+    display: none;
     position: fixed;
     z-index: 9;
     top: 0;
@@ -22,78 +22,80 @@
     -webkit-backdrop-filter: blur(14px);
 }
 
-.form{
+.form {
     width: 20%;
     padding: 25px;
     background-color: #252525;
     border-radius: 10px;
-    box-shadow:0 1px 5px 0 rgba(0,0,0,0.55);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.55);
 }
 
-.campos{
+.campos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-label{
+label {
     color: #ffffff;
-    font-family:fonte2;
-    text-align:left;
+    font-family: fonte2;
+    text-align: left;
     padding: 10px;
 }
 
-input, textarea{
-    width:20rem;
+input,
+textarea {
+    width: 20rem;
     padding: 10px;
     border-radius: 5px;
     align-items: center;
     font-family: fonte2;
 }
 
-.btn{
+.btn {
     margin: 30px;
     padding: 10px;
 }
 
-.button1{
+.button1 {
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.button2{
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-.button3{
+.button2 {
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-textarea{
+.button3 {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+textarea {
     height: 10px;
 }
 
-.texto_principal{
-    font-family:fonte2; 
-    font-size:60%;
+.texto_principal {
+    font-family: fonte2;
+    font-size: 60%;
     color: #ffffff;
     padding: 10px;
 }
 
-.texto_secundario{
-    font-family:fonte2; 
-    font-size:20px;
+.texto_secundario {
+    font-family: fonte2;
+    font-size: 20px;
     color: #ffffff;
-    padding: 5px; 
+    padding: 5px;
 }
 
-.logo{
-    width:100%;
+.logo {
+    width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
 }

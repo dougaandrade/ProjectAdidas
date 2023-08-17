@@ -1,10 +1,10 @@
-
 @font-face {
-    font-family:fonte2;
+    font-family: fonte2;
     src: url(/assets/fonts/Montserrat-SemiBold.ttf);
 }
+
 @font-face {
-    font-family:fonte5;
+    font-family: fonte5;
     src: url(/assets/fonts/Nunito-LightItalic.ttf);
 }
 
@@ -43,12 +43,12 @@ a {
     justify-content: center;
 }
 
-#navbar{
-    width:100%;
+#navbar {
+    width: 100%;
     background-color: #252525;
 }
 
-.containernav{
+.containernav {
     display: flex;
     padding: 20px;
     width: 100%;
@@ -57,7 +57,7 @@ a {
     align-items: center;
 }
 
-#container-ul{
+#container-ul {
     display: flex;
     list-style: none;
     font-size: 0.6rem;
@@ -68,64 +68,66 @@ a {
     float: right;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top:5%;
-    padding-bottom:5%;
-}
-.container-people{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top:10%;
-    gap: 20px;
-    padding-bottom:10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.container-text{
+.container-people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+    gap: 20px;
+    padding-bottom: 10%;
+}
+
+.container-text {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     justify-items: center;
     align-items: center;
 }
 
-.seta{
+.seta {
     width: 10px;
 }
-.seta:hover{
+
+.seta:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition: -webkit-transform .4s ease;
     transition: transform .3s ease;
 }
 
-.texto{
+.texto {
     color: #000000;
     font-family: fonte2;
-    text-align:center;
-    font-size:19px;
+    text-align: center;
+    font-size: 19px;
 }
 
-.img{
+.img {
     width: 200px;
     border-radius: 200px;
     border: #252525 solid;
-    box-shadow: 0 8px 6px 0 rgba(0,0,0,0.24);
+    box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.24);
 }
 
-.barra_mid{
+.barra_mid {
     background-color: #252525;
     margin: 40px 0 40px 0;
 }
 
-.texto_barra_mid{
+.texto_barra_mid {
     display: flex;
-    font-family:fonte2; 
-    font-size:20px;
+    font-family: fonte2;
+    font-size: 20px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -134,26 +136,26 @@ a {
     width: 100%;
 }
 
-.texto1, 
-.texto2, 
-.texto3{
+.texto1,
+.texto2,
+.texto3 {
     color: #000000;
     font-family: fonte2;
-    text-align:center;
-    font-size:19px;
+    text-align: center;
+    font-size: 19px;
 }
 
-.peolpe:hover{
+.peolpe:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     transition: transform .3s ease;
 }
 
 
-.background1, 
-.background2, 
-.background3{
-    width:350px;
+.background1,
+.background2,
+.background3 {
+    width: 350px;
 }
 
 
